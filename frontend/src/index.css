@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@layer components{
+    .top-active{
+        @apply top-0
+    }
+
+    .form-header{
+        @apply text-3xl font-light
+    }
+
+    .error-text{
+        @apply text-red-700
+    }
+
+    .form-control{
+        @apply mt-4 py-1 flex flex-col
+    }
+
+    .form-control input{
+        @apply bg-transparent border-b-2 focus:outline-none placeholder:text-gray-600 p-2
+    }
+
+    .form-control textarea{
+        @apply bg-transparent border-black focus:outline-none border p-2 mt-2
+    }
+
+    .form-control button{
+        @apply w-full py-2 bg-blue-700 text-white
+    }
+
+    .auth-form{
+        @apply shadow-xl p-4 lg:basis-3/12 bg-blue-400
+    }
+}
